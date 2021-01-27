@@ -1,0 +1,313 @@
+package multithreading;
+import java.util.Scanner;
+public class Miniproject {
+public static  void main(String[] args) {
+	System.out.println("WELCOME  TO MULTIPLE CHOICE QUESTIONS'S ");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER YOUR NAME:");
+		String str=sc.nextLine();
+			System.out.println("WELCOME "+str);
+		Scanner sc1=new Scanner(System.in);
+		System.out.println("ENTER YOUR MOBILE NUMBER:");
+		String str1=sc1.nextLine();
+		String tendigit = "\\d{10}";
+	      boolean result = str1.matches(tendigit);
+	      if(result) {
+	         System.out.println("phone number is valid");
+	      } else {
+	         System.out.println("try again phone number not valid");
+	      }
+	      System.out.println("your mobile number is"+str1);
+		Scanner sc2=new Scanner(System.in);
+		System.out.println("ENTER YOUR MAIL ID:");
+		String str2=sc2.nextLine();
+		Scanner sc3=new Scanner(System.in);
+		System.out.println("ENTER YOUR QUALIFICATION  WITH STREAM"+" PASSED OUT");
+		String str3=sc3.nextLine();
+		System.out.println("let's start the test");
+		System.out.println("1)INSTRUCTIONS TIMING 15 MINUTES ONLY");
+		System.out.println("2)DON'T COPY OTHERS");
+		int answer=0;
+		int wronganswer=0;
+		System.out.println("1. 	\n" + 
+				"Which one of these lists contains only Java programming language keywords?\n" + 
+				"A.	class, if, void, long, Int, continue\n" +
+				"B.	goto, instanceof, native, finally, default, throws\n" + 
+				"C.	try, virtual, throw, final, volatile, transient\n" +
+				"D.	strictfp, constant, super, implements, do\n" + 
+				"E.	byte, break, assert, switch, include");
+		Scanner sc4=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str4=sc4.nextLine();
+			if(str4.indexOf('B') ==0)
+			{
+			answer++;}
+			else{
+			wronganswer++;
+		}System.out.println(answer);
+		System.out.println(wronganswer);
+				System.out.println("2. 	\n"+
+				"Which of the following would compile without error?\n"+
+				"A.	int a = Math.abs(-5);\n"+
+				"B.	int b = Math.abs(5.0);\n"+
+				"C.	int c = Math.abs(5.5F);\n"+
+				"D.	int d = Math.abs(5L);\n");
+		Scanner sc5=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str5=sc5.nextLine();
+			if( str5.indexOf('A')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		
+		System.out.println("3. 	\n"+	
+				"Which interface provides the capability to store objects using a key-value pair?\n"+	
+
+						"A.	Java.util.Map\n"+	
+						"B.	Java.util.Set\n"+	
+						"C.	Java.util.List\n"+	
+						"D.	Java.util.Collection\n");
+		Scanner sc6=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str6=sc6.nextLine();
+			if( str6.indexOf('A')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		System.out.println("4. 	\n"+	
+		"Which is a reserved word in the Java programming language?\n"+
+		"A.	method\n"+
+		"B.	native\n"+
+		"C.	subclasses\n"+
+		"D.	reference\n"+
+		"E.	array\n");
+		Scanner sc7=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str7=sc6.nextLine();
+			if( str7.indexOf('B')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		System.out.println("5. 	\n"+		
+		"Which is a valid keyword in java?\n"+
+
+		"A.	interface\n"+
+		"B.	string\n"+
+		"C.	Float\n"+
+		"D.	unsigned\n");
+		Scanner sc8=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str8=sc6.nextLine();
+			if( str8.indexOf('A')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		System.out.println("6. 	\n"+		
+		"Which three are legal array declarations?\n"+
+
+		"1=int [] myScores [];\n"+
+		"2=char [] myChars;\n"+
+		"3=int [6] myScores;\n"+
+		"4Dog myDogs [];\n"+
+		"5=Dog myDogs [7];\n"+
+		"A.	1, 2, 4\n"+
+		"B.	2, 4, 5\n"+
+		"C.	2, 3, 4\n"+
+		"D.	All are correct.\n");
+		Scanner sc9=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str9=sc9.nextLine();
+			if( str9.indexOf('A')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		System.out.println("6. 	\n"+	 	
+		"Which one of the following will declare an array and initialize it with five numbers?\n"+	
+
+		"A.	Array a = new Array(5);\n"+	
+		"B.	int [] a = {23,22,21,20,19};\n"+	
+		"C.	int a [] = new int[5];\n"+	
+		"D.	int [5] array;\n");
+		Scanner sc10=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str10=sc10.nextLine();
+			if( str10.indexOf('B')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		System.out.println("6. 	\n"+	 			
+		"Which is the valid declarations within an interface definition?\n"+	
+
+		"A.	public double methoda();\n"+	
+		"B.	public final double methoda();\n"+	
+		"C.	static void methoda(double d1);\n"+	
+		"D.	protected void methoda(double d1);\n");
+		Scanner sc11=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str11=sc11.nextLine();
+			if( str10.indexOf('A')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		System.out.println("6. 	\n"+	 			
+		"Which three are valid declarations of a float?\n"+	
+
+		"1=float f1 = -343;\n"+	
+		"2=float f2 = 3.14;\n"+	
+		"3=float f3 = 0x12345;\n"+	
+		"4=float f4 = 42e7;\n"+	
+		"5=float f5 = 2001.0D;\n"+	
+		"6=float f6 = 2.81F;\n"+	
+		"A.	1, 2, 4\n"+	
+		"B.	2, 3, 5\n"+	
+		"C.	1, 3, 6\n"+	
+		"D.	2, 4, 6\n");
+		Scanner sc12=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str12=sc12.nextLine();
+			if( str10.indexOf('C')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		System.out.println("6. 	\n"+	 
+		"Which is a valid declarations of a String?\n"+	
+
+		"A.	String s1 = null;\n"+	
+		"B.	String s2 = 'null';\n"+	
+		"C.	String s3 = (String) 'abc';\n"+	
+		"D.	String s4 = (String) '\ufeed';\n");
+		Scanner sc13=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str13=sc13.nextLine();
+			if( str13.indexOf('A')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);
+		System.out.println("6. 	\n"+	 	
+		"What is the numerical range of a char?\n"+
+
+		"A.	-128 to 127\n"+
+		"B.	-(215) to (215) - 1\n"+
+		"C.	0 to 32767\n"+
+		"D.	0 to 65535\n");
+		Scanner sc14=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str14=sc14.nextLine();
+			if( str14.indexOf('D')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);	
+		System.out.println("6. 	\n"+
+		"Which class does not override the equals() and hashCode() methods, inheriting them directly from class Object?\n"+
+
+		"A.	java.lang.String\n"+
+		"B.	java.lang.Double\n"+
+		"C.	java.lang.StringBuffer\n"+
+		"D.	java.lang.Character\n");
+		Scanner sc15=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str15=sc15.nextLine();
+			if( str15.indexOf('C')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);	
+		System.out.println("6. 	\n"+
+		"Which collection class allows you to grow or shrink its size and provides indexed access to its elements, but whose methods are not synchronized?\n"+
+
+		"A.	java.util.HashSet\n"+
+		"B.	java.util.LinkedHashSet\n"+
+		"C.	java.util.List\n"+
+		"D.	java.util.ArrayList\n");
+		Scanner sc16=new Scanner(System.in);
+		System.out.println("enter your answer:");
+		String str16=sc16.nextLine();
+			if( str16.indexOf('D')==0) {
+			answer++;}
+		else {
+				wronganswer++;
+			}
+		System.out.println(answer);
+		System.out.println(wronganswer);	
+		System.out.println("6. 	\n"+
+		"You need to store elements in a collection that guarantees that no duplicates are stored and all elements can be accessed in natural order. Which interface provides that capability?\n"+
+
+				"A.	java.util.Map\n"+
+				"B.	java.util.Set\n"+
+				"C.	java.util.List\n"+
+				"D.	java.util.Collection\n");
+				Scanner sc17=new Scanner(System.in);
+				System.out.println("enter your answer:");
+				String str17=sc17.nextLine();
+					if( str16.indexOf('B')==0) {
+					answer++;}
+				else {
+						wronganswer++;
+					}
+				System.out.println(answer);
+				System.out.println(wronganswer);	
+				System.out.println("6. 	\n"+
+				"Which interface does java.util.Hashtable implement?\n"+
+
+				"A.	Java.util.Map\n"+
+				"B.	Java.util.List\n"+
+				"C.	Java.util.HashTable\n"+
+				"D.	Java.util.Collection\n");
+				Scanner sc18=new Scanner(System.in);
+				System.out.println("enter your answer:");
+				String str18=sc18.nextLine();
+					if( str18.indexOf('A')==0) {
+					answer++;}
+				else {
+						wronganswer++;
+					}
+				System.out.println(answer);
+				System.out.println(wronganswer);	
+			System.out.println("test copleted");
+				System.out.println("thank you ------"     +str);
+				System.out.println("your mobile number-----"     +str1);
+				System.out.println("your mail id----"     +str3);
+System.out.println("plz wait a second");
+System.out.println("your score out of 15"+answer);
+if(answer>=10) {
+	System.out.println("pass");}
+else {
+	System.out.println("not pass");
+}
+				
+}
+
+
+}
